@@ -1,22 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-
 function App() {
+  let number = 0x0000;
+  const arr = []
+  for (let i = 0; i < 1000; i++) {
+    number++;
+    console.log(String.fromCodePoint(number))
+    arr.push(String.fromCodePoint(number))
+  }
+  console.log(`\u0001`);
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p>{arr}</p>
       </header>
     </div>
   );
